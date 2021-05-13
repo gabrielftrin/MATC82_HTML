@@ -3,9 +3,13 @@ ATIVIDADE FEITA PELA EQUIPE 4
 - LINSMAR
 - FELIPE
 - GABRIEL
+
 ARQUIVOS CRIADOS:
-contato.html
-form.js
-form.css
+
+- contato.html
+- form.js
+- form.css
+
 ARQUIVOS EDITADOS:
-index.html
+
+- index.html
