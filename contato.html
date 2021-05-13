@@ -7,26 +7,65 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <script src='./js/form.js'></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/form.css" />
 </head>
 <body>
+    <header class="menu-principal">
+        <div>
+            <div class="header-1">
+                <div class="logo">
+                    <img class="img" src="./img/logo123.png" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About Us</a>
+                    </li>
+                    <li>
+                        <a href="">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="busca">
+                <input placeholder="Search Something" type="text" />
+            </div>
+        </div>
+    </div>
+    <div class="conteudo">
+        <form>
+            <h3>Entre em contato conosco pelo formulário abaixo.</h3><br />
 
-    <title>CONTATO</title>
-
-    <p>Entre em contato conosco pelo formulário abaixo.</p>
-
-    <p>Nome</p> (obrigatório)
-    <input type="text">
-    <p>Email</p> (obrigatório)
-    <input type="text">
-    <p>Website</p>  
-    <input type="text">
-    <p>Mensagem</p> (obrigatório)
-    <input type="text">
-
-    <input type="submit">
-
-    <p>Compartilhe isso:</p>
-    <img src="./img/tw.png" />
-
+            <label for="nome">Nome (obrigatório):</label><br />
+            <input type="text" name="nome" id="nome"><br />
+            <label for="email">Email:</label><br />
+            <input type="text" name="email" id="email"><br />
+            <label for="telefone">Telefone (obrigatório):</label><br />
+            <input type="text" name="telefone" id="telefone"><br />
+            <label for="numero">Número da encomenda:</label><br />
+            <input type="text" name="numero" id="numero"><br />
+            <label for="titulo">Título da mensagem (obrigatório):</label><br />
+            <input type="text" name="titulo" id="titulo"><br />
+            <label for="mensagem">Mensagem (obrigatório):</label><br />
+            <textarea name="mensagem" rows="4" cols="50" id="mensagem"></textarea><br />
+            <button type="button" onclick="enviarForm()">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
